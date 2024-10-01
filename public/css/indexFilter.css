@@ -1,0 +1,76 @@
+.card-img-overlay button{
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.card-img-overlay button i{
+  color: gray;
+}
+.card-img-overlay button:hover{
+  opacity: 1;
+}
+
+/*************************   SECOND NAVBAR   *************************************/
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 80px;
+}
+
+#filters button{
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    background-color: white;
+    border: 0.5px solid rgb(190, 188, 188);
+   
+}
+  
+#filters button i{
+  color: rgb(88, 87, 87);
+  font-size: 1rem;
+  text-align: center;
+}
+  
+.filter {
+    text-align: center;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+    opacity: 0.7;
+}
+  
+.filter p {
+    font-size: 0.8rem;
+}
+.filter:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.filter p {
+   font-size: 0.8rem;
+}
+  
+  
+.tax-info {
+    display: none;
+}
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 2.5rem;
+    padding: 1rem;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+  
+ 
+  
+  
