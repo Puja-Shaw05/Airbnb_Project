@@ -12,20 +12,28 @@
 
       <div class="navbar-nav ms-auto">
         <form class="d-flex"></form>
-          <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations" >
-          <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+          <div class="d-flex sear">
+            <input class=" search  me-2 search-inp inp" type="search" placeholder="Search destinations">
+            <button class="icon" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
         </form>
       </div>
 
       <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings/new">Airbnb your home</a>
+        <i class="fa-solid fa-globe"></i>
         <% if (!currUser) { %>
-          <a class="nav-link" href="/signup"><button class="btn btn-primary">Sign up</button></a>
+          <a class="nav-link" href="/signup"><b>Sign up</b></a>
           <a class="nav-link" href="/login"><b>Log in</b></a>
           <% } %>
+          <div class="user">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+            <img src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="user">
+          </div>
+          
             <% if (currUser) { %>
               <a class="nav-link" href="/logout"><b>Log out</b></a>
-              <% } %>
+            <% } %>
       </div>
     </div>
   </div>

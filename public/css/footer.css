@@ -1,0 +1,79 @@
+/* .f-info-links a {
+    text-decoration: none;
+    color: #222222;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin-right: 0.8rem;
+}
+*/
+/* .f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    /* display: flex; 
+    /* align-items: center;
+    justify-content: center; 
+} */
+ .main{
+    height: 15rem;
+ } 
+
+
+.f-info {
+    text-align: center;
+    height: 10rem;
+    display: flex;
+    background-color: #ebebeb;
+    /* flex-wrap: wrap; */
+    justify-content:space-around;
+    align-items: center;
+} 
+.f-info-brand,
+.f-info-links,
+.f-info-socials{
+    margin-top: 5rem;
+}
+.f-info-brand{
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.f-info-links ul{
+  display: flex;
+  margin-right: 12rem;
+}
+.f-info-links ul li {
+    margin-right: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+}
+.f-info-links ul li a{
+    text-decoration: none;
+    color: #222222;
+    font-size: 1rem;
+}
+
+.f-info-socials{
+    display: flex;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+.f-info-socials p{
+    margin-top: 0.6rem;
+    margin-right: 2rem;
+    font-size: 0.9rem;
+}
+.f-info-socials .fa-brands{
+    margin-top: 0.8rem;
+    margin-right: 1.5rem;
+    font-size: 1.3rem;
+}
+.f-info-socials .globe{
+    margin-right: 0.5rem;
+}

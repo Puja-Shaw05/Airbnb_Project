@@ -1,8 +1,16 @@
 <% layout("/layouts/boilerplate") %>
+
 <script>
   const mapToken = "<%= process.env.MAP_TOKEN %>";
-  const listing = "<%- JSON.stringify(listing) %>";
+  const listing = <%- JSON.stringify(listing) %>;
+  // const listing = JSON.parse("<%- JSON.stringify(listing) %>");
 </script>
+
+<style>
+  .fa-globe {
+    margin-left: 0.1rem;
+  }
+</style>
 
 <div class="row mt-3">
   <div class="col-8 offset-1">
@@ -15,21 +23,21 @@
       alt="listing-image"
     />
     <div class="card-body col-8">
-      <p class="card-text">
+      <p class="card-text mt-3">
         <i class="fa-solid fa-user-tie"></i>&nbsp; &nbsp;
         <b> Hosted by - <i><%= listing.owner.username %> </i></b>
       </p>
       <p class="card-text"><%= listing.description %></p>
       <p class="card-text">
-        <i class="fa-brands fa-drupal"></i> &nbsp; &nbsp; &#8377;<%=
+        <i class="fa-brands fa-drupal"></i> &nbsp; &nbsp; &#8377; &nbsp;<%=
         listing.price.toLocaleString("en-IN") %>
       </p>
       <p class="card-text">
         <i class="fa-solid fa-location-dot"></i> &nbsp; &nbsp;<%=
         listing.location %>
       </p>
-      <p class="card-text">
-        <i class="fa-solid fa-globe"></i> &nbsp; &nbsp;<%= listing.country %>
+      <p class="card-text col-8">
+        <i class="fa-solid fa-globe"></i><%= listing.country %>
       </p>
     </div>
   </div>
@@ -153,7 +161,7 @@
     <% } %>
   </div>
   <div class="col-8 offset-1 mb-3">
-    <h3><i class="fa-solid fa-earth-asia"></i>&nbsp;Where you'll be</h3>
+    <h4><i class="fa-solid fa-earth-asia"></i>&nbsp;Where you'll be</h4>
     <div id="map"></div>
   </div>
 </div>
